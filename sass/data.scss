@@ -13,7 +13,12 @@
 .data {
     background: #e1e1e1;
     // background: #afad9a;
-
+    .btn {
+        transition: 1s;
+        &:hover {
+            color: $color-second
+        }
+    }
     .bg-nature {
         position: absolute;
         top: 0;
@@ -49,6 +54,7 @@
 
             .btn-card {
                 display: block;
+                transition: 1s;
             }
         }
         position: relative;
