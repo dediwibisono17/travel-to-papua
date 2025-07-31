@@ -1,0 +1,77 @@
+.data {
+    background: #e1e1e1;
+    // background: #afad9a;
+    .titles {
+        font-size: 7.5rem;
+        font-family: 'Playfair';
+        font-weight: bold;
+        position: relative;
+        z-index: 3;
+        @media screen and (max-width:768px) {
+            font-size: 3.5rem;
+            line-height: 3rem;
+        }
+    }
+
+    .bg-nature {
+        position: absolute;
+        top: 0;
+        right: -32px;
+        width: 50%;
+        // z-index: -1;
+        height: auto;
+        opacity: .1;
+        @media screen and (max-width:768px) {
+            width: 100%;
+            z-index: 1;
+            opacity: .1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .card {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        border-radius: 16px;
+        border:1px solid transparent;
+        background-color: transparent;
+        .content {
+            position: absolute;
+            // bottom: 8px;
+            // left: 8px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 0 0 16px 16px;
+            background: linear-gradient(to top, #1b1b1b, transparent);
+            .padd {
+                padding: 8px 16px;
+                h4 {
+                    color: white;
+                    font-size: 2rem;
+                }
+                p {
+                    color: #ececec;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+        }
+    }
+}

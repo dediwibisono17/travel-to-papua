@@ -2,9 +2,11 @@ $color-primary : #8bbcea;
 
 main, body {
     font-family: 'jost';
+    overflow-x: clip;
 }
 
 section {
     min-height: 100vh;
     padding: 32px 0;
+    position: relative;
 }
