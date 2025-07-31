@@ -5,7 +5,7 @@ $max : 766px
 $color-yellow:#fec400
 .bg-black
     background: rgba(255,255 ,255 ,.7 ) !important
-    transition: .3s
+    // transition: .3s
     // border-bottom: 2px solid orange
     box-shadow: 0 10px 20px rgb(0 0 0 / 20%)
     backdrop-filter: blur(8px)
@@ -23,9 +23,11 @@ $color-yellow:#fec400
             @media screen and (max-width:$max) 
                 color: $color-primary !important
     .navbar-nav 
+        align-items: center
         .nav-link
+
             color: #fff
-            font-size: 1.3rem
+            font-size: 1.5rem
             margin: 0 8px
             &:hover
                 color: $color-primary
@@ -59,14 +61,23 @@ $color-yellow:#fec400
         &:hover
             color: #25d366
 header
-    // position: sticky
-    position: absolute
+    position: fixed
+    // position: absolute
     right: 0
     left: 0
     top: 0
     z-index: 999
     overflow-x: hidden
+    transition: .3s
     // border-bottom: 2px solid rgba(0,0 ,0 ,.8 )
+    &.small
+        // transition: .3s
+        background: rgba(0, 0, 0, .5)
+        .logo
+            width: 80px
+            transition: .3s
+        .nav-link
+            font-size: 1.1rem !important
     .form-control
         background-color: transparent
         border-bottom: 1px solid white
@@ -121,12 +132,13 @@ header
     //background: rgba(white,.3)
     //transition: .5s
     // backdrop-filter: blur(4px)
-    transition: .5s
+    transition: .3s
     // background: rgba(255, 255, 255, 0)
     background: transparent
     @media screen and ( max-width: $max )
         backdrop-filter: none
-        background: rgba(255, 255, 255, .9)
+        padding: 0 !important
+        background: rgba(255, 255, 255, 0)
 
     
 .disable-flag 
@@ -180,7 +192,7 @@ header
         transition: left 500ms ease-in-out
     
 .logo 
-    width: 200px
+    width: 175px
     height: auto
     margin-right: 16px
     @media screen and ( max-width:  $max)
