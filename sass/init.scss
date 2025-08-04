@@ -16,3 +16,79 @@ section {
     padding: 32px 0;
     position: relative;
 }
+
+.general {
+    padding: 0;
+    &.bg-color {
+        background: #8bbcea;
+    }
+    .gambar {
+        width: 100%;
+        height: 420px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            inset:0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: .5);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+    a {
+        color: black;
+    }
+    .d-all {
+        display: block;
+        .wrap-card {
+            display: inline-block;
+            width: 30%;
+            margin: 0 8px;
+            @media screen and (max-width:768px) {
+                width: 90%;
+            }
+        }
+    }
+    .cardx {
+        width: 100%;
+        border-radius: 32px;
+        background: white;
+        margin-bottom: 32px;
+        .image {
+            width: 100%;
+            height: 240px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 32px 32px 0 0;
+                object-fit: contain;
+            }
+        }
+        .content {
+            padding: 16px;
+            .title {
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    @media screen and (max-width:768px) {
+                        font-size: 1.4rem;
+                    }
+
+                }
+            }
+            .all {
+                display: inline-block;
+                margin: 8px ;
+                i {
+                    color: #ee6c4d;
+                }
+            }
+        }
+    }
+}
