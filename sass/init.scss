@@ -17,8 +17,12 @@ section {
     position: relative;
 }
 
+.breadcrumb{
+    background: transparent;
+}
+
 .general {
-    padding: 0;
+    padding: 0 0 32px;
     &.bg-color {
         background: #c1cfbc;
     }
