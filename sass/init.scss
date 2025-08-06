@@ -30,6 +30,9 @@ section {
         width: 100%;
         height: 420px;
         position: relative;
+        @media screen and (max-width:768px) {
+            height: fit-content;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -95,4 +98,45 @@ section {
             }
         }
     }
+}
+
+.detailx {
+    .image {
+        width: 100%;
+        height: 400px;
+        @media screen and (max-width:768px) {
+            height: fit-content;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    p {
+        font-size: 1.4rem;
+        @media screen and (max-width:768px) {
+            font-size: 1.2rem;
+        }
+    }
+     .content {
+            padding: 16px;
+            .title {
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    @media screen and (max-width:768px) {
+                        font-size: 1.4rem;
+                    }
+
+                }
+            }
+            .all {
+                display: inline-block;
+                margin: 8px ;
+                i {
+                    color: #ee6c4d;
+                }
+            }
+        }
 }

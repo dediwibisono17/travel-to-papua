@@ -5,6 +5,9 @@
     line-height: 7rem;
     position: relative;
     z-index: 3;
+    &.smaller {
+        scale: .7;
+    }
     @media screen and (max-width:768px) {
         font-size: 3.5rem;
         line-height: 3rem;
