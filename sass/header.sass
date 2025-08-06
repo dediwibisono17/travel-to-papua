@@ -197,13 +197,18 @@ header
     .navbar-toggler.collapsed~.navbar-collapse
         transition: left 500ms ease-in-out
 
+
+.isdesktop
+    .logo
+        @media screen and ( max-width: $max )
+            display: none
 .logo
     width: 175px
     height: auto
     margin-right: 16px
     transition: .3s
     @media screen and ( max-width:  $max)
-        display: none
+        // display: none
 
 a
     &:hover
