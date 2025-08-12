@@ -1,5 +1,11 @@
 .banner {
     padding: 0;
+
+    .all-img {
+        display: block;
+        position: relative;
+        height: 100vh;
+    }
     .wrap {
         display: block;
         position: relative;
@@ -28,7 +34,7 @@
         h2 {
             font-size: 5rem;
             color: white;
-            font-family: 'Spinnaker';
+            font-family: 'Marcellus';
             font-weight: bold;
             @media screen and (max-width:768px) {
                 font-size: 2.5rem;
@@ -67,4 +73,91 @@
     }
 
 
+}
+
+.whyUs {
+    min-height: auto;
+    .imagex {
+        width: 100%;
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+    }
+    li {
+        margin-bottom: 45px;
+        // margin-left: 40px;
+        .title {
+            margin-left: 16px;
+            font-family: 'Marcellus';
+            vertical-align: middle;
+            font-size: 1.5rem;
+        }
+        i {
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: black;
+            color: #eaeaea;
+            padding: 8px;
+            margin-bottom: 32px;
+
+        }
+    }
+}
+
+.cta {
+    min-height: 50vh;
+    padding: 0;
+    position: relative;
+    .click-wa {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: white;
+        
+        translate: -50% -50%;
+        .btn-whatsapp {
+            width: 100%;
+            border: 3px solid #fff;
+            padding: 16px 32px;
+            // width: fit-content;
+            height: auto;
+            color: white;
+            font-size: 1.6rem;
+            border-radius: 50px !important;
+            @media screen and (max-width:768px) {
+                    width: 100%;
+    border: 2px solid #fff;
+    padding: 16px 0px;
+    height: auto;
+    font-size: 1.3rem;
+    border-radius: 50px !important;
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        // height: 150px;
+        // opacity: .5;
+        height: 100%;
+        // display: none;
+        position: absolute;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            // background: rgba(#c1cfbc,.8);
+                        background: rgba(#000,.6);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
