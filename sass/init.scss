@@ -218,6 +218,28 @@ section {
     }
 }
 
+.testimoni {
+    .image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 8px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
 .detailx {
     .image {
         width: 100%;
